@@ -6,6 +6,7 @@
     </Unrecognized>
     <Recognized>
       <Word>Lite</Word>
+      <Word>Serilog</Word>
     </Recognized>
     <Deprecated>
       <Term PreferredAlternate=""></Term>
