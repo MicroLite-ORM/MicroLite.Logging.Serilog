@@ -29,10 +29,9 @@ For further information on configuring Serilog, see [github.com/serilog/serilog/
 
 The NuGet Package contains binaries compiled against:
 
-* .NET 3.5 (Client Profile)
 * .NET 4.0 (Client Profile)
 * .NET 4.5
 
 ## Supported Serilog Versions
 
-* Serilog 1.4.0 onwards
+* Serilog 1.4.1 onwards
