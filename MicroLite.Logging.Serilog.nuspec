@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>MicroLite.Logging.Serilog</id>
+    <version>0.0.0</version>
+    <authors>Trevor Pilley and MicroLite Project Contributors</authors>
+    <owners>Trevor Pilley</owners>
+    <description>An extension for the MicroLite ORM Framework to use serilog as the logging library.</description>
+    <language>en-GB</language>
+    <projectUrl>http://microliteorm.wordpress.com/</projectUrl>
+    <licenseUrl>http://microliteorm.wordpress.com/license/</licenseUrl>
+    <copyright>Copyright 2012 - 2014 Project Contributors</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>serilog MicroORM ORM POCO Database</tags>
+    <dependencies>
+      <dependency id="MicroLite" version="6.1.0" />
+      <dependency id="Serilog" version="1.4.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\build\4.0\MicroLite.Logging.Serilog.dll" target="lib\net40-client" />
+    <file src="..\build\4.0\MicroLite.Logging.Serilog.xml" target="lib\net40-client" />
+    <file src="..\build\4.5\MicroLite.Logging.Serilog.dll" target="lib\net45" />
+    <file src="..\build\4.5\MicroLite.Logging.Serilog.xml" target="lib\net45" />
+  </files>
+</package>
