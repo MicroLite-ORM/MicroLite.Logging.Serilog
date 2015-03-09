@@ -1,6 +1,8 @@
 MicroLite.Logging.Serilog
 =========================
 
+[![NuGet version](https://badge.fury.io/nu/MicroLite.Logging.Serilog.svg)](http://badge.fury.io/nu/MicroLite.Logging.Serilog)
+
 _MicroLite.Logging.Serilog_ is an extension to the MicroLite ORM Framework which allows MicroLite to write any log statements to [Serilog](http://serilog.net/).
 
 In order to use the extension, you first need to install it via NuGet:
