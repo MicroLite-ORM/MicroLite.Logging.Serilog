@@ -13,8 +13,18 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>serilog MicroORM ORM POCO Database</tags>
     <dependencies>
-      <dependency id="MicroLite" version="6.1.0" />
-      <dependency id="Serilog" version="1.4.1" />
+      <group targetFramework="net40">
+        <dependency id="MicroLite" version="[6.3,7.0)" />
+        <dependency id="Serilog" version="[1.5.14,2.0)" />
+      </group>
+      <group targetFramework="net45">
+        <dependency id="MicroLite" version="[6.3,7.0)" />
+        <dependency id="Serilog" version="2.3" />
+      </group>
+      <group targetFramework="net46">
+        <dependency id="MicroLite" version="[6.3,7.0)" />
+        <dependency id="Serilog" version="2.3" />
+      </group>
     </dependencies>
   </metadata>
   <files>
@@ -22,5 +32,7 @@
     <file src="..\build\4.0\MicroLite.Logging.Serilog.xml" target="lib\net40-client" />
     <file src="..\build\4.5\MicroLite.Logging.Serilog.dll" target="lib\net45" />
     <file src="..\build\4.5\MicroLite.Logging.Serilog.xml" target="lib\net45" />
+    <file src="..\build\4.6\MicroLite.Logging.Serilog.dll" target="lib\net46" />
+    <file src="..\build\4.6\MicroLite.Logging.Serilog.xml" target="lib\net46" />
   </files>
 </package>
