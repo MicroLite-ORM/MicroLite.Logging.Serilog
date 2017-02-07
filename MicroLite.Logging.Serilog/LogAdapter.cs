@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
 // <copyright file="LogAdapter.cs" company="MicroLite">
-// Copyright 2012 - 2015 Project Contributors
+// Copyright 2012 - 2017 Project Contributors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -24,45 +24,15 @@ namespace MicroLite.Logging.Serilog
             this.logger = logger;
         }
 
-        public bool IsDebug
-        {
-            get
-            {
-                return this.logger.IsEnabled(global::Serilog.Events.LogEventLevel.Debug);
-            }
-        }
+        public bool IsDebug => this.logger.IsEnabled(global::Serilog.Events.LogEventLevel.Debug);
 
-        public bool IsError
-        {
-            get
-            {
-                return this.logger.IsEnabled(global::Serilog.Events.LogEventLevel.Error);
-            }
-        }
+        public bool IsError => this.logger.IsEnabled(global::Serilog.Events.LogEventLevel.Error);
 
-        public bool IsFatal
-        {
-            get
-            {
-                return this.logger.IsEnabled(global::Serilog.Events.LogEventLevel.Fatal);
-            }
-        }
+        public bool IsFatal => this.logger.IsEnabled(global::Serilog.Events.LogEventLevel.Fatal);
 
-        public bool IsInfo
-        {
-            get
-            {
-                return this.logger.IsEnabled(global::Serilog.Events.LogEventLevel.Information);
-            }
-        }
+        public bool IsInfo => this.logger.IsEnabled(global::Serilog.Events.LogEventLevel.Information);
 
-        public bool IsWarn
-        {
-            get
-            {
-                return this.logger.IsEnabled(global::Serilog.Events.LogEventLevel.Warning);
-            }
-        }
+        public bool IsWarn => this.logger.IsEnabled(global::Serilog.Events.LogEventLevel.Warning);
 
         public void Debug(string message)
         {
