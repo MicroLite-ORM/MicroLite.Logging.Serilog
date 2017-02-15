@@ -34,10 +34,7 @@ namespace MicroLite.Logging.Serilog
 
         public bool IsWarn => this.logger.IsEnabled(global::Serilog.Events.LogEventLevel.Warning);
 
-        public void Debug(string message)
-        {
-            this.logger.Debug(message);
-        }
+        public void Debug(string message) => this.logger.Debug(message);
 
         public void Debug(string message, params string[] formatArgs)
         {
@@ -47,10 +44,7 @@ namespace MicroLite.Logging.Serilog
             }
         }
 
-        public void Error(string message)
-        {
-            this.logger.Error(message);
-        }
+        public void Error(string message) => this.logger.Error(message);
 
         public void Error(string message, params string[] formatArgs)
         {
@@ -60,15 +54,9 @@ namespace MicroLite.Logging.Serilog
             }
         }
 
-        public void Error(string message, Exception exception)
-        {
-            this.logger.Error(message, exception);
-        }
+        public void Error(string message, Exception exception) => this.logger.Error(message, exception);
 
-        public void Fatal(string message)
-        {
-            this.logger.Fatal(message);
-        }
+        public void Fatal(string message) => this.logger.Fatal(message);
 
         public void Fatal(string message, params string[] formatArgs)
         {
@@ -78,15 +66,9 @@ namespace MicroLite.Logging.Serilog
             }
         }
 
-        public void Fatal(string message, Exception exception)
-        {
-            this.logger.Fatal(message, exception);
-        }
+        public void Fatal(string message, Exception exception) => this.logger.Fatal(message, exception);
 
-        public void Info(string message)
-        {
-            this.logger.Information(message);
-        }
+        public void Info(string message) => this.logger.Information(message);
 
         public void Info(string message, params string[] formatArgs)
         {
@@ -96,10 +78,7 @@ namespace MicroLite.Logging.Serilog
             }
         }
 
-        public void Warn(string message)
-        {
-            this.logger.Warning(message);
-        }
+        public void Warn(string message) => this.logger.Warning(message);
 
         public void Warn(string message, params string[] formatArgs)
         {
