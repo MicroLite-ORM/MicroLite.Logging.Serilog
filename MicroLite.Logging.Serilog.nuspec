@@ -13,14 +13,8 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>serilog MicroORM ORM POCO Database</tags>
     <dependencies>
-      <group targetFramework="net45">
-        <dependency id="MicroLite" version="[6.3,7.0)" />
-        <dependency id="Serilog" version="2.3" />
-      </group>
-      <group targetFramework="net46">
-        <dependency id="MicroLite" version="[6.3,7.0)" />
-        <dependency id="Serilog" version="2.3" />
-      </group>
+      <dependency id="MicroLite" version="[6.3,7.0)" />
+      <dependency id="Serilog" version="2.3" />
     </dependencies>
   </metadata>
   <files>
