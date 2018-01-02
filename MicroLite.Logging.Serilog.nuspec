@@ -14,13 +14,11 @@
     <tags>serilog MicroORM ORM POCO Database</tags>
     <dependencies>
       <dependency id="MicroLite" version="[6.3,7.0)" />
-      <dependency id="Serilog" version="2.3" />
+      <dependency id="Serilog" version="2.6" />
     </dependencies>
   </metadata>
   <files>
-    <file src="..\build\4.5\MicroLite.Logging.Serilog.dll" target="lib\net45" />
-    <file src="..\build\4.5\MicroLite.Logging.Serilog.xml" target="lib\net45" />
-    <file src="..\build\4.6\MicroLite.Logging.Serilog.dll" target="lib\net46" />
-    <file src="..\build\4.6\MicroLite.Logging.Serilog.xml" target="lib\net46" />
+    <file src="MicroLite.Logging.Serilog\bin\Release\MicroLite.Logging.Serilog.dll" target="lib\net45" />
+    <file src="MicroLite.Logging.Serilog\bin\Release\MicroLite.Logging.Serilog.xml" target="lib\net45" />
   </files>
 </package>
