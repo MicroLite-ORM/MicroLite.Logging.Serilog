@@ -41,8 +41,8 @@ using System.Runtime.InteropServices;
 //      Minor Version
 //      Build Number
 //      Revision
-[assembly: AssemblyVersion("6.3.0.0")]
-[assembly: AssemblyFileVersion("6.3.0.0")]
-[assembly: AssemblyInformationalVersion("6.3.0.15")]
+[assembly: AssemblyVersion("6.4.0")]
+[assembly: AssemblyFileVersion("6.4.0.0")]
+[assembly: AssemblyInformationalVersion("6.4.0.0")]
 [assembly: CLSCompliant(false)]
-[assembly: NeutralResourcesLanguageAttribute("en-GB")]
+[assembly: NeutralResourcesLanguage("en-GB")]
