@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
 // <copyright file="SerilogConfigurationExtensions.cs" company="Project Contributors">
-// Copyright 2012 - 2018 Project Contributors
+// Copyright Project Contributors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -10,12 +10,12 @@
 //
 // </copyright>
 // -----------------------------------------------------------------------
+using System;
+using MicroLite.Logging.Serilog;
+using Serilog;
+
 namespace MicroLite.Configuration
 {
-    using System;
-    using MicroLite.Logging.Serilog;
-    using Serilog;
-
     /// <summary>
     /// Extensions for the MicroLite configuration.
     /// </summary>
@@ -29,7 +29,7 @@ namespace MicroLite.Configuration
         /// <returns>The configure extensions.</returns>
         public static IConfigureExtensions WithSerilog(this IConfigureExtensions configureExtensions, LoggerConfiguration loggerConfiguration)
         {
-            if (configureExtensions == null)
+            if (configureExtensions is null)
             {
                 throw new ArgumentNullException(nameof(configureExtensions));
             }
@@ -38,7 +38,7 @@ namespace MicroLite.Configuration
 
             configureExtensions.SetLogResolver((Type type) =>
             {
-                var logger = loggerConfiguration.CreateLogger().ForContext(type);
+                ILogger logger = loggerConfiguration.CreateLogger().ForContext(type);
 
                 return new LogAdapter(logger);
             });
