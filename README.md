@@ -39,5 +39,5 @@ For further information on configuring Serilog, see [github.com/serilog/serilog/
 The NuGet Package contains binaries compiled against (dependencies indented):
 
 * .NET Framework 4.5
-  * MicroLite 6.3.1
+  * MicroLite 7.0.0
   * Serilog 2.6.0
