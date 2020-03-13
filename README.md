@@ -1,6 +1,5 @@
-# MicroLite.Logging.Serilog
-
-## Status
+MicroLite.Logging.Serilog
+=========================
 
 |Service|Status|
 |-------|------|
@@ -8,13 +7,13 @@
 |/develop|[![Build Status](https://dev.azure.com/trevorpilley/MicroLite-ORM/_apis/build/status/MicroLite-ORM.MicroLite.Logging.Serilog?branchName=develop)](https://dev.azure.com/trevorpilley/MicroLite-ORM/_build/latest?definitionId=35&branchName=develop)|
 |/master|[![Build Status](https://dev.azure.com/trevorpilley/MicroLite-ORM/_apis/build/status/MicroLite-ORM.MicroLite.Logging.Serilog?branchName=master)](https://dev.azure.com/trevorpilley/MicroLite-ORM/_build/latest?definitionId=35&branchName=master)|
 
+MicroLite.Logging.Serilog is a .NET 4.5 library which adds an extension for the MicroLite ORM Framework to use Serilog as the logging library.
+
 ## Installation
 
 Install the nuget package `Install-Package MicroLite.Extensions.Serilog`
 
-## Summary
-
-MicroLite.Logging.Serilog is a .NET 4.5 library which adds an extension for the MicroLite ORM Framework to use Serilog as the logging library.
+## Configuration
 
 You can then load the extension in your application start-up:
 
